@@ -4,6 +4,13 @@ menu "Customise DVB Frontends"
 comment "Multistandard (satellite) frontends"
 	depends on DVB_CORE
 
+config DVB_CX24120
+	tristate "Conexant CX24120 based"
+	depends on DVB_CORE && I2C
+	default m if DVB_FE_CUSTOMISE
+	help
+	  A DVB-S/DVB-S2 tuner module. Say Y when you want to support this frontend.
+
 config DVB_STB0899
 	tristate "STB0899 based"
 	depends on DVB_CORE && I2C

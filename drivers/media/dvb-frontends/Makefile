@@ -24,6 +24,10 @@ obj-$(CONFIG_DVB_SP8870) += sp8870.o
 obj-$(CONFIG_DVB_CX22700) += cx22700.o
 obj-$(CONFIG_DVB_S5H1432) += s5h1432.o
 obj-$(CONFIG_DVB_CX24110) += cx24110.o
+
+# inserted by Custler
+obj-$(CONFIG_DVB_CX24120) += cx24120.o
+
 obj-$(CONFIG_DVB_TDA8083) += tda8083.o
 obj-$(CONFIG_DVB_L64781) += l64781.o
 obj-$(CONFIG_DVB_DIB3000MB) += dib3000mb.o
